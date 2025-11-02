@@ -25,7 +25,7 @@ Place this flow e.g. in the User Settings screen of your Experience Cloud site, 
 
 ### Apex: MfaDeregister
 
-Callable from Flow. Deregisters a given MFA method (see [MfaMethod](#mfa-method) below) for a given user.
+Callable from Flow. Deregisters a given MFA method (see [MfaMethod](#apex-mfa-method) below) for a given user.
 Since it's built as an invocable method, it will receive a list of Mfa methods.
 
 ### Apex: MfaGetRegistrationMethods
@@ -33,6 +33,6 @@ Since it's built as an invocable method, it will receive a list of Mfa methods.
 Callable from Flow. Returns a list of registration methods for a given user.
 Since it's built an an invocable method, it will receive a list of users, and return a list of registration method lists.
 
-### Apex: MfaMethod \{# #mfa-method\}
+### ]Apex: MfaMethod]
 
 A data class that can be used in Flow as Apex-defined. Holds a registration method.
