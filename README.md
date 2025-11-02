@@ -33,6 +33,6 @@ Since it's built as an invocable method, it will receive a list of Mfa methods.
 Callable from Flow. Returns a list of registration methods for a given user.
 Since it's built an an invocable method, it will receive a list of users, and return a list of registration method lists.
 
-### Apex: MfaMethod {#mfa-method}
+### Apex: MfaMethod {: #mfa-method}
 
 A data class that can be used in Flow as Apex-defined. Holds a registration method.
