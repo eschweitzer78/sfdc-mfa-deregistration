@@ -11,6 +11,11 @@ Warning: from a security standpoint, it's not a great idea to let users de-regis
 
 This exemple could be much enhanced by adding 2FA validation before de-registering, e.g. by leveraging [UserManagement.initVerificationMethod](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_UserManagement.htm).
 
+<a href="https://githubsfdeploy.herokuapp.com">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
 ## List of artefacts
 
 ### Flow: MfaDeregister
