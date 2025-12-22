@@ -42,6 +42,18 @@
         </connector>
         <flowTransactionModel>Automatic</flowTransactionModel>
         <inputParameters>
+            <name>countryCode</name>
+            <value>
+                <elementReference>CountryCode</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>phoneNumber</name>
+            <value>
+                <elementReference>Phone.value</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
             <name>verificationCode</name>
             <value>
                 <elementReference>Code</elementReference>

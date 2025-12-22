@@ -1,11 +1,6 @@
 public class MfaRegisterSMS {
-    public class VerificationRegData {
-        public @InvocableVariable String countryCode;
-        public @InvocableVariable String phoneNumber;
-    }
-
     @InvocableMethod(label='MFA Send Verification Code' category='MFA')
-    public static List<Boolean> sendVerificationCode(List<VerificationRegData> data) {
+    public static List<Boolean> sendVerificationCode(List<MfaRegisterSMSData> data) {
         if (data == null || data.isEmpty()) {
             return new List<Boolean>();
         }
@@ -15,7 +10,6 @@ public class MfaRegisterSMS {
         String countryCode = data[0].countryCode;
         String phoneNumber = data[0].phoneNumber;
         Boolean success = false;
-
         String userId = UserInfo.getUserId();
         User u = [
             Select MobilePhone, Id from User Where Id = :userId
@@ -36,6 +30,9 @@ public class MfaRegisterSMS {
             System.UserManagement.initRegisterVerificationMethod(
                 Auth.VerificationMethod.SMS
             );
+
+            u.MobilePhone = currentPhone;
+            update u;
 
             success = true;
         } catch (Exception e) {
