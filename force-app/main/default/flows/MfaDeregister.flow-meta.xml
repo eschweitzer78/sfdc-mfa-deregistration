@@ -109,7 +109,7 @@
     </dynamicChoiceSets>
     <environments>Default</environments>
     <interviewLabel>MfaDeregister {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>MfaDeregister</label>
+    <label>MFA Deregister</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
